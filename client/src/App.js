@@ -13,12 +13,12 @@ function App() {
   return (
     <div className="App">
       <NavBar />
-      <button
+      {/* <button
         onClick={toggleDarkMode}
         className="mt-4 p-2 bg-gray-800 text-white dark:bg-gray-200 dark:text-black rounded"
       >
         Toggle Dark Mode
-      </button>
+      </button> */}
     </div>
   );
 }
