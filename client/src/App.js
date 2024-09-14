@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import './App.css';
 import NavBar from './Components/NavBar';
+import Home from './Pages/Home';
 
 function App() {
   const [isDarkMode, setIsDarkMode] = useState(false);
@@ -13,12 +14,16 @@ function App() {
   return (
     <div className="App">
       <NavBar />
+
+
+      <Home />
       {/* <button
         onClick={toggleDarkMode}
         className="mt-4 p-2 bg-gray-800 text-white dark:bg-gray-200 dark:text-black rounded"
       >
         Toggle Dark Mode
       </button> */}
+      
     </div>
   );
 }
