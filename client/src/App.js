@@ -1,25 +1,24 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
-import { Button, Input } from '@nextui-org/react';
+import NavBar from './Components/NavBar';
 
 function App() {
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  const toggleDarkMode = () => {
+    setIsDarkMode(!isDarkMode);
+    document.documentElement.classList.toggle('dark');
+  };
+
   return (
     <div className="App">
-      {/* <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header> */}
-     
+      <NavBar />
+      <button
+        onClick={toggleDarkMode}
+        className="mt-4 p-2 bg-gray-800 text-white dark:bg-gray-200 dark:text-black rounded"
+      >
+        Toggle Dark Mode
+      </button>
     </div>
   );
 }
