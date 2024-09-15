@@ -1,12 +1,13 @@
 import React from 'react';
 import NavBar from '../Components/NavBar';
+import Footer from '../Components/Footer';
 
 const Home = () => {
   return (
     <>
       <NavBar />
       <section className="bg-white dark:bg-gray-900 py-12 pt-16"> {/* Add pt-16 to account for the fixed nav bar */}
-        <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between">
+        <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between mt-48 mb-20">
           
           {/* Left Section: Text and Buttons */}
           <div className="lg:w-1/2 space-y-6">
@@ -17,7 +18,7 @@ const Home = () => {
             </p>
 
             {/* Buttons */}
-            <div className="flex space-x-4">
+            <div className="flex space-x-4 justify-center">
               <a 
                 href="https://drive.google.com/your-resume-link" 
                 className="bg-pink-500 text-white px-6 py-3 rounded-full shadow hover:bg-pink-600 transition">
@@ -37,6 +38,7 @@ const Home = () => {
           </div>
         </div>
       </section>
+      <Footer/>
     </>
   );
 };
