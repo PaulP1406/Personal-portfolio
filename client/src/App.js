@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import './App.css';
-import NavBar from './Components/NavBar';
 import Home from './Pages/Home';
 
 function App() {
@@ -12,8 +11,7 @@ function App() {
   };
 
   return (
-    <div className="App">
-      <NavBar />
+    <div className="App">    
 
 
       <Home />

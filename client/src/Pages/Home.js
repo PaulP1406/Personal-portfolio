@@ -1,61 +1,43 @@
 import React from 'react';
-import { FaGithub, FaLinkedin, FaInstagram, FaDribbble } from 'react-icons/fa';
+import NavBar from '../Components/NavBar';
 
 const Home = () => {
   return (
-    <section className="bg-white dark:bg-gray-900 py-12">
-      <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between">
-        
-        {/* Left Section: Text and Buttons */}
-        <div className="lg:w-1/2 space-y-6">
-          <p className="text-pink-500 font-semibold text-lg">UI/UX Designer</p>
-          <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100">Hi! I Am [Your Name]</h1>
-          <p className="text-gray-700 dark:text-gray-300 text-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed tempor incididunt ut labore et dolore magna aliqua.
-          </p>
+    <>
+      <NavBar />
+      <section className="bg-white dark:bg-gray-900 py-12 pt-16"> {/* Add pt-16 to account for the fixed nav bar */}
+        <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between">
+          
+          {/* Left Section: Text and Buttons */}
+          <div className="lg:w-1/2 space-y-6">
+            <h1 className="text-4xl lg:text-6xl font-bold text-gray-900 dark:text-gray-100">Hi, I'm Paul Pham</h1>
+            <h2 className="text-2xl lg:text-4xl font-semibold text-gray-700 dark:text-gray-300">Full Stack Software Engineer</h2>
+            <p className="text-gray-700 dark:text-gray-300 text-lg">
+              I am a passionate software engineer with experience in building web applications using modern technologies. I love solving complex problems and creating efficient solutions.
+            </p>
 
-          {/* Buttons */}
-          <div className="flex space-x-4">
-            <a 
-              href="https://drive.google.com/your-resume-link" 
-              className="bg-pink-500 text-white px-6 py-3 rounded-full shadow hover:bg-pink-600 transition">
-              Resume
-            </a>
-            <a 
-              href="/quotes" 
-              className="bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-600 transition">
-              Leave a Quote
-            </a>
+            {/* Buttons */}
+            <div className="flex space-x-4">
+              <a 
+                href="https://drive.google.com/your-resume-link" 
+                className="bg-pink-500 text-white px-6 py-3 rounded-full shadow hover:bg-pink-600 transition">
+                View Resume
+              </a>
+              <a 
+                href="/quotes" 
+                className="bg-blue-500 text-white px-6 py-3 rounded-full shadow hover:bg-blue-600 transition">
+                Leave a Quote
+              </a>
+            </div>
           </div>
 
-          {/* Social Icons */}
-          <div className="flex space-x-6 mt-6">
-            <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer">
-              <FaGithub className="w-8 h-8 text-gray-800 dark:text-gray-200 hover:text-blue-500" />
-            </a>
-            <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer">
-              <FaLinkedin className="w-8 h-8 text-gray-800 dark:text-gray-200 hover:text-blue-500" />
-            </a>
-            <a href="https://instagram.com/your-profile" target="_blank" rel="noopener noreferrer">
-              <FaInstagram className="w-8 h-8 text-gray-800 dark:text-gray-200 hover:text-blue-500" />
-            </a>
-            <a href="https://dribbble.com/your-profile" target="_blank" rel="noopener noreferrer">
-              <FaDribbble className="w-8 h-8 text-gray-800 dark:text-gray-200 hover:text-blue-500" />
-            </a>
+          {/* Right Section: Image */}
+          <div className="lg:w-1/2 mb-10 lg:mb-0">
+            <img src="your-image-link.jpg" alt="Paul Pham" className="w-full h-auto rounded-lg shadow-lg" />
           </div>
         </div>
-
-        {/* Right Section: Image */}
-        <div className="lg:w-1/2 relative">
-          <img 
-            src="your-photoshopped-image-url-here" 
-            alt="[Your Name]" 
-            className="w-full h-auto"
-          />
-        </div>
-
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
