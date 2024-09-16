@@ -1,6 +1,4 @@
 import React from 'react';
-import NavBar from '../Components/NavBar';
-import Footer from '../Components/Footer';
 import {ReactTyped} from 'react-typed';
 import profPic from '../Logos/profpic.png';
 
@@ -22,7 +20,7 @@ const Home = () => {
                   'Full Stack Software Engineer',
                   'Full Stack Web Developer',
                   'Tech Enthusiast',
-                  'Computer Science Student at SFU'
+                  'Computer Science Student at Simon Fraser University'
                 ]}
                 typeSpeed={45}
                 backSpeed={35}

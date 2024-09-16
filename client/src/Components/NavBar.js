@@ -1,9 +1,11 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import { FaGithub, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa';
+import ThemeContext from '../ThemeContext';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [isDarkMode, setIsDarkMode] = useState(false);
+  const { theme, toggleTheme } = useContext(ThemeContext);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -43,8 +45,8 @@ const NavBar = () => {
           <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
             <FaLinkedin className="w-6 h-6" />
           </a>
-          <button onClick={toggleDarkMode} className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none">
-            {isDarkMode ? <FaSun className="w-6 h-6" /> : <FaMoon className="w-6 h-6" />}
+          <button onClick={toggleTheme} className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none">
+            {theme === 'dark' ? <FaSun className="w-6 h-6" /> : <FaMoon className="w-6 h-6" />}
           </button>
         </div>
 
