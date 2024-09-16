@@ -6,8 +6,7 @@ import profPic from '../Logos/profpic.png';
 
 const Home = () => {
   return (
-    <>
-      <NavBar />
+    <>      
       <section className="bg-white dark:bg-gray-900 min-h-screen flex items-center">
         <div className="container mx-auto px-6 lg:px-20 flex flex-col-reverse lg:flex-row items-center justify-between mt-48 mb-48">
           
@@ -54,11 +53,10 @@ const Home = () => {
 
           {/* Right Section: Image */}
           <div className="lg:w-1/2 mb-10 lg:mb-0 mx-auto lg:ml-48 pb-8">
-            <img src={profPic} alt="Paul Pham" className="w-3/4 lg:w-full h-auto rounded-lg border-0 mx-auto" />
+            <img src={profPic} alt="Paul Pham" className="w-3/5 lg:w-full h-auto rounded-lg border-0 mx-auto" />
           </div>
         </div>
-      </section>
-      <Footer />
+      </section>      
     </>
   );
 };

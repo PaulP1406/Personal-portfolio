@@ -1,28 +1,22 @@
-import React, { useState } from 'react';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Home from './Pages/Home';
+import About from './Pages/About';
+import NavBar from './Components/NavBar';
+import Footer from './Components/Footer';
 
 function App() {
-  const [isDarkMode, setIsDarkMode] = useState(false);
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('dark');
-  };
-
   return (
-    <div className="App">    
-
-
-      <Home />
-      {/* <button
-        onClick={toggleDarkMode}
-        className="mt-4 p-2 bg-gray-800 text-white dark:bg-gray-200 dark:text-black rounded"
-      >
-        Toggle Dark Mode
-      </button> */}
-      
-    </div>
+    <Router>
+      <div className="App">
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+        </Routes>
+        <Footer />
+      </div>
+    </Router>
   );
 }
 
