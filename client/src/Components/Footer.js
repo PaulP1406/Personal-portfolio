@@ -9,7 +9,7 @@ const Footer = () => {
     <footer className={`py-12 ${theme === 'dark' ? 'bg-gray-900 text-gray-400' : 'bg-gray-100 text-gray-800'}`}>
       {/* Top Line */}
       <div className="container mx-auto px-6 w-90">
-        <hr className={`mb-8 ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300'}`} />
+        <hr className={`mb-8 ${theme === 'dark' ? 'border-gray-700' : 'border-gray-300 w-5/12 mx-auto pb-6'}`} />
       </div>
       
       <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-4 gap-8">
