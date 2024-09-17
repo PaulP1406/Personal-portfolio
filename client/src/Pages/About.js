@@ -54,7 +54,7 @@ const About = () => {
       </div>
 
                {/* Tech Stack Section */}
-      <div className="container mx-auto px-6 lg:px-20 mt-24">
+      <div className="container mx-auto px-6 lg:px-20 mt-32">
         <h2 className="text-5xl font-bold text-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-600 bg-clip-text text-transparent mb-6">Tech Stack</h2>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <div className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg flex flex-col items-center justify-center hover:bg-gradient-to-r hover:from-indigo-500 hover:via-purple-500 hover:to-pink-500">
