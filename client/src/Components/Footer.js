@@ -39,7 +39,7 @@ const Footer = () => {
 
           {/* Social Icons */}
           <div className="text-center lg:text-left lg:col-start-6">
-            <h3 className={`font-semibold mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Follow Me</h3>
+            <h3 className={`font-semibold  mb-4 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>Follow Me</h3>
             <div className="flex justify-center lg:justify-start space-x-4">
               <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
                 <FaGithub className="w-6 h-6" />
@@ -47,7 +47,7 @@ const Footer = () => {
               <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
                 <FaLinkedin className="w-6 h-6" />
               </a>
-              <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
+              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
                 <FaTwitter className="w-6 h-6" />
               </a>
               <a href="https://youtube.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
@@ -55,7 +55,7 @@ const Footer = () => {
               </a>
               <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
                 <FaInstagram className="w-6 h-6" />
-              </a>
+              </a> */}
             </div>
           </div>
         </div>
