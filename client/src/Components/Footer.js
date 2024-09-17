@@ -16,7 +16,7 @@ const Footer = () => {
         
         {/* Left Column: Logo */}
         <div>
-          <h2 className={`text-2xl font-bold mb-4 lg:pl-20 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>PPham</h2>
+          <h2 className={`text-2xl font-bold mb-4 text-center lg:text-left lg:pl-20 ${theme === 'dark' ? 'text-white' : 'text-gray-900'}`}>PPham</h2>
         </div>
 
         {/* Right Column: Useful Links and Social Icons */}
@@ -62,7 +62,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Row: Copyright */}
-      <div className="container mx-auto px-6 flex justify-between items-center mt-8">
+      <div className="container mx-auto px-6 flex justify-center lg:justify-between items-center mt-8 lg:pl-20">
         <p className={`${theme === 'dark' ? 'text-gray-400' : 'text-gray-800'}`}>&copy; {new Date().getFullYear()} Paul Pham. All rights reserved.</p>
       </div>
     </footer>
