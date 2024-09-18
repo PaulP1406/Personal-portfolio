@@ -1,6 +1,44 @@
 import React from 'react';
-
+import { useState } from 'react';
 const Contact = () => {
+    const [formData, setFormData] = useState({
+        firstName: '',
+        lastName: '',
+        email: '',
+        phone: '',
+        message: ''
+    });
+
+    const [error, setError] = useState("");
+    const [success, setSucess] = useState("");
+
+    const handleChange = (e) => {
+        setFormData({ ...formData, [e.target.name]: e.target.value });
+    }
+    const handleSubmit = async (e) => {
+        e.preventDefault();
+        setError("");
+        setSucess("");
+        try {
+            const respond = await fetch ("api/contact", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify(formData)
+            });
+            if (responde.ok) {
+                setSucess("Message sent successfully!");
+                setFormData({"firstName": "", "lastName": "", "email": "", "phone": "", "message": ""});
+            } else {
+                setError("Failed to send message. Please try again later.");
+            }
+        }
+        catch (err) {
+            setError("Failed to send message. Please try again later.");
+        }
+    }
+
     return (
         <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-gray-900">
             <div className="container mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-8 gap-12">
@@ -14,16 +52,20 @@ const Contact = () => {
                     </h2>
                     <p className="mb-8 text-gray-600 dark:text-gray-300 text-center lg:text-left">Let's connect! Coffee's on me (and 🥐 too!)</p>
 
-                    <form className="space-y-4">
+                    <form className="space-y-4" onSubmit={handleSubmit}>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <input
                                 type="text"
                                 placeholder="First Name"
+                                value={formData.firstName}
+                                onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
                             />
                             <input
                                 type="text"
                                 placeholder="Last Name"
+                                value={formData.lastName}
+                                onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
                             />
                         </div>
@@ -31,16 +73,22 @@ const Contact = () => {
                             <input
                                 type="email"
                                 placeholder="Email"
+                                value={formData.email}
+                                onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
                             />
                             <input
                                 type="tel"
                                 placeholder="Phone"
+                                value={formData.phone}
+                                onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
                             />
                         </div>
                         <textarea
                             placeholder="Your Message"
+                            value={formData.message}
+                            onChange={handleChange}
                             className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400 w-full h-32"
                         ></textarea>
                         <div className="text-center lg:text-left">
