@@ -43,12 +43,13 @@ app.post('/api/email', (req, res) => {
     auth: {
       user: process.env.EMAIL,
       pass: process.env.PASSWORD
-    }
+    },
+    logger: true
   });
 
   const mailOptions = {
     from: email,
-    to: process.env.EMAIL,
+    to: "ducduy0308@gmail.com",
     subject: `Message from ${name}`,
     text: message
   };
