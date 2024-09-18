@@ -27,7 +27,7 @@ const Contact = () => {
                 },
                 body: JSON.stringify(formData)
             });
-            if (responde.ok) {
+            if (respond.ok) {
                 setSucess("Message sent successfully!");
                 setFormData({"firstName": "", "lastName": "", "email": "", "phone": "", "message": ""});
             } else {
