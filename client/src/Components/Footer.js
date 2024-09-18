@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { FaGithub, FaLinkedin, FaTwitter, FaYoutube, FaInstagram } from 'react-icons/fa';
+import { FaGithub, FaLinkedin} from 'react-icons/fa';
 import ThemeContext  from '../ThemeContext';
 
 const Footer = () => {
@@ -47,15 +47,7 @@ const Footer = () => {
               <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
                 <FaLinkedin className="w-6 h-6" />
               </a>
-              {/* <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
-                <FaTwitter className="w-6 h-6" />
-              </a>
-              <a href="https://youtube.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
-                <FaYoutube className="w-6 h-6" />
-              </a>
-              <a href="https://instagram.com/yourusername" target="_blank" rel="noopener noreferrer" className={`transition ${theme === 'dark' ? 'hover:text-gray-200' : 'hover:text-gray-600'}`}>
-                <FaInstagram className="w-6 h-6" />
-              </a> */}
+             
             </div>
           </div>
         </div>
