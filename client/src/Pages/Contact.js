@@ -56,7 +56,7 @@ const Contact = () => {
 
                 {/* Right Section: Contact Information */}
                 <div className="w-full text-gray-900 dark:text-white lg:col-start-6 lg:col-span-3 mt-20 lg:mt-2">
-                    <h2 className="text-3xl font-bold text-gray-700 dark:text-gray-100 text-center mb-8 lg:text-left">
+                    <h2 className="text-3xl lg:text-2xl font-bold text-gray-700 dark:text-gray-100 text-center mb-8 lg:text-left">
                         Contact <br /> Information                        
                     </h2>
                     <p className="text-gray-600 dark:text-gray-300 text-center lg:text-left">
@@ -65,13 +65,13 @@ const Contact = () => {
                     <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Mobile:</strong> (+1) 778-710-6344</p>
                     <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Location:</strong> Vancouver, BC, Canada</p>
 
-                    <h3 className="mt-20 lg:mt-12 text-3xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left mt-8">
+                    <h3 className="mt-20 lg:mt-12 text-3xl lg:text-2xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left mt-8">
                         Follow Me
                         
                     </h3>
                     <div className="flex justify-center lg:justify-start space-x-4 mt-4">
-                        <a href="#" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Facebook</a>
-                        <a href="#" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Instagram</a>
+                        <a href="https://www.linkedin.com/in/ddpham/" className="transition hover:text-indigo-400 dark:hover:text-pink-300">LinkedIn</a>
+                        <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Github</a>
                         <a href="#" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Discord</a>
                     </div>
                 </div>
