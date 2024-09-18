@@ -5,14 +5,14 @@ const Contact = () => {
         <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-gray-900">
             <div className="container mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-8 gap-12">
                 {/* Left Section: Contact Form */}
-                <div className="w-full text-gray-900 dark:text-white col-start-2 col-span-3">
+                <div className="w-full text-gray-900 dark:text-white lg:col-start-2 lg:col-span-3">
                     <h2 className="text-3xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left">
                         Just say
                         <span className="text-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                             &nbsp;Hello!
                         </span>
                     </h2>
-                    <p className="mb-8 text-gray-600 dark:text-gray-300">Let's connect! Coffee's on me (and 🥐 too!)</p>
+                    <p className="mb-8 text-gray-600 dark:text-gray-300 text-center lg:text-left">Let's connect! Coffee's on me (and 🥐 too!)</p>
 
                     <form className="space-y-4">
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -55,23 +55,23 @@ const Contact = () => {
                 </div>
 
                 {/* Right Section: Contact Information */}
-                <div className="w-full text-gray-900 dark:text-white col-start-6 col-span-3">
+                <div className="w-full text-gray-900 dark:text-white lg:col-start-6 lg:col-span-3 mt-20 lg:mt-2">
                     <h2 className="text-3xl font-bold text-gray-700 dark:text-gray-100 text-center mb-8 lg:text-left">
                         Contact <br /> Information                        
                     </h2>
-                    <p className="text-gray-600 dark:text-gray-300">
+                    <p className="text-gray-600 dark:text-gray-300 text-center lg:text-left">
                         <strong>Email:</strong> ducduy0308@gmail.com
                     </p>
-                    <p className="mt-4 text-gray-600 dark:text-gray-300"><strong>Mobile:</strong> (+1) 778-710-6344</p>
-                    <p className="mt-4 text-gray-600 dark:text-gray-300"><strong>Location:</strong> Vancouver, BC, Canada</p>
+                    <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Mobile:</strong> (+1) 778-710-6344</p>
+                    <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Location:</strong> Vancouver, BC, Canada</p>
 
-                    <h3 className="mt-12 text-3xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left mt-8">
+                    <h3 className="mt-20 lg:mt-12 text-3xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left mt-8">
                         Follow Me
                         
                     </h3>
-                    <div className="flex space-x-4 mt-4">
-                        <a href="https://www.linkedin.com/in/ddpham/" className="transition hover:text-indigo-400 dark:hover:text-pink-300">LinkedIn</a>
-                        <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Github</a>
+                    <div className="flex justify-center lg:justify-start space-x-4 mt-4">
+                        <a href="#" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Facebook</a>
+                        <a href="#" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Instagram</a>
                         <a href="#" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Discord</a>
                     </div>
                 </div>
