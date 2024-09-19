@@ -38,10 +38,10 @@ const Footer = () => {
           <div className="text-center lg:text-left lg:col-start-6">
             <h3 className="font-semibold mb-4 text-gray-900 dark:text-white">Follow Me</h3>
             <div className="flex justify-center lg:justify-start space-x-4">
-              <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer" className="transition hover:text-gray-600 dark:hover:text-gray-200">
+              <a href="https://github.com/PaulP1406" target="_blank" rel="noopener noreferrer" className="transition hover:text-gray-600 dark:hover:text-gray-200">
                 <FaGithub className="w-6 h-6" />
               </a>
-              <a href="https://linkedin.com/in/yourusername" target="_blank" rel="noopener noreferrer" className="transition hover:text-gray-600 dark:hover:text-gray-200">
+              <a href="https://www.linkedin.com/in/ddpham/" target="_blank" rel="noopener noreferrer" className="transition hover:text-gray-600 dark:hover:text-gray-200">
                 <FaLinkedin className="w-6 h-6" />
               </a>
             </div>
