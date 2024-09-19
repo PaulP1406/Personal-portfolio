@@ -1,6 +1,10 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
+import useWindowSize from 'react-use/lib/useWindowSize'
+import Confetti from 'react-confetti';
 
 const Contact = () => {
+    const { width, height } = useWindowSize();
+    
     const [formData, setFormData] = useState({
         firstName: '',
         lastName: '',
@@ -10,7 +14,7 @@ const Contact = () => {
     });
 
     const [error, setError] = useState("");
-    const [success, setSucess] = useState("");
+    const [success, setSucess] = useState(false);
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
@@ -21,15 +25,15 @@ const Contact = () => {
         setError("");
         setSucess("");
         try {
-            const respond = await fetch ("http://localhost:5000/api/email", {
+            const response = await fetch ("http://localhost:5000/api/email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
                 },
                 body: JSON.stringify(formData)
             });
-            if (respond.ok) {
-                setSucess("Message sent successfully!");
+            if (response.ok) {
+                setSucess(true);
                 console.log("Message sent successfully!");
                 setFormData({"firstName": "", "lastName": "", "email": "", "phone": "", "message": ""});
             } else {
@@ -41,8 +45,26 @@ const Contact = () => {
         }
     }
 
+    useEffect(() => {
+        if (success) {
+          const timer = setTimeout(() => {
+            setSucess(false);
+          }, 10000); // Confetti for 3 seconds
+          return () => clearTimeout(timer);
+        }
+      }, [success]);
+
     return (
         <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-gray-900">
+            {success  && (
+                <Confetti
+                 width={width}
+                 height={height}
+                 numberOfPieces={1000}       
+                 gravity={0.05}   
+                 recycle={false}
+             />
+            )}
             <div className="container mx-auto px-6 py-12 grid grid-cols-1 lg:grid-cols-8 gap-12">
                 {/* Left Section: Contact Form */}
                 <div className="w-full text-gray-900 dark:text-white lg:col-start-2 lg:col-span-3">
