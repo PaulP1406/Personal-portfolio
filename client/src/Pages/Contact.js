@@ -55,7 +55,7 @@ const Contact = () => {
       }, [success]);
 
     return (
-        <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-gray-900">
+        <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-gray-900 mb-8">
             {success  && (
                 <Confetti
                  width={width}
@@ -148,7 +148,7 @@ const Contact = () => {
                     <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Mobile:</strong> (+1) 778-710-6344</p>
                     <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Location:</strong> Vancouver, BC, Canada</p>
 
-                    <h3 className="mt-20 lg:mt-12 text-3xl lg:text-2xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left mt-8">
+                    <h3 className="pt-16 lg:mt-12 text-3xl lg:text-2xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left mt-8">
                         Follow Me
                         
                     </h3>
