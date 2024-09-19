@@ -34,9 +34,12 @@ app.get('/api', (req, res) => {
   res.json({ message: 'Welcome to the API' });
 });
 
+app.get('/api/email', (req, res) => {
+  res.json({ message: 'Email route' });
+});
 // Nodemailer setup:
 app.post('/api/email', (req, res) => {
-  const { name, email, message } = req.body;
+  const { firstName, lastName, email, phone, message } = req.body;
   
   const transporter = Nodemailer.createTransport({
     service: 'gmail',
@@ -50,8 +53,8 @@ app.post('/api/email', (req, res) => {
   const mailOptions = {
     from: email,
     to: "ducduy0308@gmail.com",
-    subject: `Message from ${name}`,
-    text: message
+    subject: `Message from ${firstName} ${lastName}`,
+    text: `${message}${phone}`
   };
 
   try {

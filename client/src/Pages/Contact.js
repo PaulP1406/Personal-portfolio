@@ -1,5 +1,5 @@
-import React from 'react';
-import { useState } from 'react';
+import React, {useState} from 'react';
+
 const Contact = () => {
     const [formData, setFormData] = useState({
         firstName: '',
@@ -15,12 +15,13 @@ const Contact = () => {
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     }
+    
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError("");
         setSucess("");
         try {
-            const respond = await fetch ("api/contact", {
+            const respond = await fetch ("http://localhost:5000/api/email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -29,6 +30,7 @@ const Contact = () => {
             });
             if (respond.ok) {
                 setSucess("Message sent successfully!");
+                console.log("Message sent successfully!");
                 setFormData({"firstName": "", "lastName": "", "email": "", "phone": "", "message": ""});
             } else {
                 setError("Failed to send message. Please try again later.");
@@ -56,41 +58,52 @@ const Contact = () => {
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <input
                                 type="text"
+                                name="firstName"
                                 placeholder="First Name"
                                 value={formData.firstName}
                                 onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
+                                required
                             />
                             <input
                                 type="text"
                                 placeholder="Last Name"
+                                name='lastName'
                                 value={formData.lastName}
                                 onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
+                                required
                             />
                         </div>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                             <input
                                 type="email"
                                 placeholder="Email"
+                                name='email'
                                 value={formData.email}
                                 onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
+                                required
                             />
                             <input
                                 type="tel"
                                 placeholder="Phone"
+                                name='phone'
                                 value={formData.phone}
                                 onChange={handleChange}
                                 className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400"
+                                
                             />
                         </div>
                         <textarea
                             placeholder="Your Message"
+                            name='message'
                             value={formData.message}
                             onChange={handleChange}
                             className="p-4 rounded-lg border bg-gray-100 dark:bg-gray-700 text-gray-900 dark:text-white border-gray-300 dark:border-gray-600 focus:ring-indigo-600 dark:focus:ring-pink-400 w-full h-32"
+                            required
                         ></textarea>
+                        
                         <div className="text-center lg:text-left">
                             <button
                                 type="submit"
@@ -120,7 +133,7 @@ const Contact = () => {
                     <div className="flex justify-center lg:justify-start space-x-4 mt-4">
                         <a href="https://www.linkedin.com/in/ddpham/" className="transition hover:text-indigo-400 dark:hover:text-pink-300">LinkedIn</a>
                         <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Github</a>
-                        <a href="#" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Discord</a>
+                        <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Discord</a>
                     </div>
                 </div>
             </div>
