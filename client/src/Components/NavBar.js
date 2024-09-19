@@ -39,10 +39,10 @@ const NavBar = () => {
           <a href="/quotes" className="hidden lg:block px-5 py-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white rounded-full shadow hover:opacity-90 transition duration-300 dark:bg-blue-700 dark:hover:bg-blue-800 transition duration-300">
             Leave a Quote
           </a>
-          <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
+          <a href="https://github.com/PaulP1406" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
             <FaGithub className="w-6 h-6" />
           </a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
+          <a href="https://www.linkedin.com/in/ddpham/" target="_blank" rel="noopener noreferrer" className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
             <FaLinkedin className="w-6 h-6" />
           </a>
           <button onClick={toggleTheme} className="hidden lg:block text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none">
@@ -52,10 +52,10 @@ const NavBar = () => {
 
         {/* Hamburger Menu and Icons */}
         <div className="flex items-center space-x-2 lg:hidden space-x-5">
-          <a href="https://github.com/your-profile" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
+          <a href="https://github.com/PaulP1406" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
             <FaGithub className="w-5 h-5" />
           </a>
-          <a href="https://linkedin.com/in/your-profile" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
+          <a href="https://www.linkedin.com/in/ddpham/" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
             <FaLinkedin className="w-5 h-5" />
           </a>
           <button onClick={toggleDarkMode} className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 focus:outline-none">
