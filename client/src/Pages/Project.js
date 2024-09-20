@@ -1,33 +1,34 @@
 import React from 'react';
-import ProjectCard from '../Components/ProjectCard'; 
-import profpic from '../Logos/profpic.png';
+import ProjectCard from '../Components/ProjectCard';
+import { FaReact, FaNodeJs, FaServer } from 'react-icons/fa'; 
+import personalProf from '../Logos/PersonalProf.png';
+
+const techIconMap = {
+    react: <FaReact />,
+    node: <FaNodeJs />,
+    express: <FaServer />,
+};
 
 const Projects = () => {
-    // Local project data
-    const projectData = [
-        {
-            title: "Usable Query",
-            description: "Simplifies the use of React Query by offering a streamlined and centralized approach to managing queries and mutations.",
-            imageUrl: {profpic}, // Make sure to place your images in the 'public' folder
-            techStack: ["Javascript", "Typescript", "Vite"],
-            projectLink: "https://github.com/your-github/usable-query"
-        },
-       
-    ];
-
     return (
-        <div className="container mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {projectData.map((project, index) => (
-                <ProjectCard
-                    key={index}
-                    title={project.title}
-                    description={project.description}
-                    imageUrl={project.imageUrl}
-                    techStack={project.techStack}
-                    projectLink={project.projectLink}
-                />
-            ))}
-            <p> I'm in here</p>
+        <div className="container pt-20 mx-auto p-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            <ProjectCard
+                title="Android & IOS Apps"
+                description="Development of 3 cross-platform mobile apps made with Apache Cordova."
+                imageUrl= {personalProf}
+                techStack={["react", "node", "express"]}
+                techIconMap={techIconMap}
+                githubLink="https://github.com/your-repo/web-application"
+            />
+            <ProjectCard
+                title="Web Application"
+                description="A full-stack web application built with React, Node.js, and Express."
+                imageUrl="/images/web-app.png"
+                techStack={["react", "node", "express"]}
+                techIconMap={techIconMap}
+                githubLink="https://github.com/your-repo/web-application"
+            />
+            {/* Add more ProjectCard components as needed */}
         </div>
     );
 };
