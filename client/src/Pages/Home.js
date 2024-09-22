@@ -28,13 +28,15 @@ const Home = () => {
               />
             </h2>
             <p className="text-gray-700 dark:text-gray-300 text-lg">
-              I am a passionate software engineer with experience in building web applications using modern technologies. I love solving complex problems and creating efficient solutions.
+              I am a passionate software engineer with experience in building different applications using modern technologies. I love solving complex problems and creating efficient solutions.
             </p>
 
             {/* Buttons */}
             <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 sm:justify-center lg:justify-start pt-2">
               <a 
-                href="https://drive.google.com/your-resume-link" 
+                href="https://drive.google.com/file/d/1zXCrVVaq6o2pwuWI3XsTnPWBpvk6R2Om/view?usp=sharing"
+                target='_blank'
+                rel='noopener noreferrer' 
                 className="bg-gradient-to-r from-rose-500 to-amber-600 dark:from-rose-500 dark:to-amber-600 text-white px-6 py-3 rounded-full shadow transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-fuchsia-600 hover:to-pink-600 dark:hover:bg-gradient-to-r dark:hover:from-fuchsia-600 dark:hover:to-pink-600 transition-transform duration-300 hover:scale-105">
                 View Resume
               </a>
