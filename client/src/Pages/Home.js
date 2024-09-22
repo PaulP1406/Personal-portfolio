@@ -35,12 +35,12 @@ const Home = () => {
             <div className="flex flex-col items-center space-y-4 sm:flex-row sm:space-x-4 sm:space-y-0 sm:justify-center lg:justify-start pt-2">
               <a 
                 href="https://drive.google.com/your-resume-link" 
-                className="bg-gradient-to-r from-rose-500 to-amber-600 dark:from-rose-500 dark:to-amber-600 text-white px-6 py-3 rounded-full shadow transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-fuchsia-600 hover:to-pink-600 dark:hover:bg-gradient-to-r dark:hover:from-fuchsia-600 dark:hover:to-pink-600">
+                className="bg-gradient-to-r from-rose-500 to-amber-600 dark:from-rose-500 dark:to-amber-600 text-white px-6 py-3 rounded-full shadow transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-fuchsia-600 hover:to-pink-600 dark:hover:bg-gradient-to-r dark:hover:from-fuchsia-600 dark:hover:to-pink-600 transition-transform duration-300 hover:scale-105">
                 View Resume
               </a>
               <a 
                 href="/quotes" 
-                className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-700 dark:via-purple-700 dark:to-pink-700 text-white px-6 py-3 rounded-full shadow transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-cyan-400 hover:to-blue-400 dark:hover:bg-gradient-to-r dark:hover:from-emerald-400 dark:hover:to-cyan-400"
+                className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 dark:from-indigo-700 dark:via-purple-700 dark:to-pink-700 text-white px-6 py-3 rounded-full shadow transition duration-300 ease-in-out hover:bg-gradient-to-r transition-transform duration-300 hover:scale-105 transform dark:hover:bg-gradient-to-r"
                 style={{ backgroundSize: '200% 200%', backgroundPosition: 'left center' }}
                 onMouseEnter={(e) => e.currentTarget.style.backgroundPosition = 'right center'}
                 onMouseLeave={(e) => e.currentTarget.style.backgroundPosition = 'left center'}>
