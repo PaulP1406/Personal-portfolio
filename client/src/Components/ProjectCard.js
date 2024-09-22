@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, imageUrl, techStack, techIconMap, git
                 <h3 className="text-xl font-bold mb-2">{title}</h3>
 
                 {/* Description */}
-                <p className="mb-4">{description}</p>
+                <p className="mb-6 dark:font-light">{description}</p>
 
                 {/* Tech Stack Icons */}
                 <div className="flex mt-4 space-x-4">
@@ -58,7 +58,7 @@ const ProjectCard = ({ title, description, imageUrl, techStack, techIconMap, git
                             href={liveDemoLink}
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="text-2xl hover:text-gray-400 transition-colors duration-300"
+                            className="text-xl hover:text-gray-400 transition-colors duration-300"
                         >
                             <FaExternalLinkAlt />
                         </a>

@@ -24,8 +24,8 @@ const Projects = () => {
             <div className="container mx-auto p-6 grid grid-cols-1 lg:grid-cols-6 gap-6">
                 <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
-                        title="Android & IOS Apps"
-                        description="Development of 3 cross-platform mobile apps made with Apache Cordova."
+                        title="Personal portfolio 📃"
+                        description="This full-stack portfolio showcases my projects using React, Tailwind CSS, Node.js, Express, and MongoDB, building client, server and database sides. It features a responsive design, dynamic project management, and smooth user interactions, highlighting my skills in modern web development."
                         imageUrl={personalProf}
                         techStack={["react", "node", "express"]}
                         techIconMap={techIconMap}
