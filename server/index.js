@@ -10,6 +10,7 @@ const Nodemailer = require('nodemailer');
 
 const app = express();
 
+// Middleware
 app.use(cors());
 app.use(express.json());
 
@@ -37,6 +38,8 @@ app.get('/api', (req, res) => {
 app.get('/api/email', (req, res) => {
   res.json({ message: 'Email route' });
 });
+
+
 // Nodemailer setup:
 app.post('/api/email', (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body;
@@ -65,6 +68,35 @@ app.post('/api/email', (req, res) => {
   }
 });
 
+// Define the Quote model
+const quoteSchema = new mongoose.Schema({
+  name: String,
+  quote: String,
+});
+
+const Quote = mongoose.model('Quote', quoteSchema);
+
+// API Routes for quotes
+app.post('/api/quotes', async (req, res) => {
+  const { name, quote } = req.body;
+
+  try {
+      const newQuote = new Quote({ name, quote });
+      await newQuote.save();
+      res.status(201).json(newQuote);
+  } catch (err) {
+      res.status(500).json({ error: 'Failed to save quote' });
+  }
+});
+
+app.get('/api/quotes', async (req, res) => {
+  try {
+      const quotes = await Quote.find();
+      res.status(200).json(quotes);
+  } catch (err) {
+      res.status(500).json({ error: 'Failed to fetch quotes' });
+  }
+});
 
 // Starting the express server
 app.listen(port, () => {
