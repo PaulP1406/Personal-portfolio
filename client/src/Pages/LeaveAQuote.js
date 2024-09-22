@@ -53,7 +53,7 @@ const LeaveAQuote = () => {
     };
 
     return (
-        <div className="container mx-auto p-6 pt-40 dark:bg-gray-900">
+        <div className="pt-36 min-h-screen bg-white text-gray-900 dark:bg-gray-900 dark:text-white">
             <h1 className="text-xl font-bold mb-4 text-center dark:text-gray-300">
                 Feeling positive? <br />
                 <span className="text-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
@@ -70,7 +70,7 @@ const LeaveAQuote = () => {
                             value={formData.name}
                             maxLength={25}
                             onChange={handleChange}
-                            className="w-full lg:w-3/12 p-2 border rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
+                            className="w-3/4 lg:w-3/12 p-2 border rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
                             required
                         />
                         <input
@@ -79,7 +79,7 @@ const LeaveAQuote = () => {
                             maxLength={120}
                             value={formData.quote}
                             onChange={handleChange}
-                            className="w-full lg:w-5/12 p-2 border rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
+                            className="w-3/4 lg:w-5/12 p-2 border rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
                             required
                         ></input>
                     </div>
@@ -113,7 +113,7 @@ const LeaveAQuote = () => {
                     ))}
                 </ul>
             </div>
-            <div className='mb-16 text-center lg:text-right lg:mr-40'>
+            <div className='pb-16 text-center lg:text-right lg:mr-40'>
                 <a href="/contact" className="text-lg font-bold text-gray-600 dark:text-gray-400 group">
                         <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                             Connect with me
