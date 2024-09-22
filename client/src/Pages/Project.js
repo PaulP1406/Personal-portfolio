@@ -41,7 +41,7 @@ const Projects = () => {
                 <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
                         title="Personal portfolio 📃"
-                        description="This Personal Portfolio is a full-stack application showcasing my skills and projects. Built with React, Tailwind CSS, Node.js, Express, and MongoDB, it features a dynamic, responsive design and smooth user interactions. The app integrates a backend for project management and stores data efficiently with MongoDB. It's a comprehensive display of my expertise in both front-end and back-end development, combining performance, modern design in UI/UX, and functionality."
+                        description="This Personal Portfolio is a full-stack application showcasing my skills and projects. Built with React, Tailwind CSS, Node.js, Express, and MongoDB, it features a dynamic, responsive design and smooth user interactions. The app integrates a backend for project management and stores data efficiently with MongoDB. It's a comprehensive display of my expertise in both front-end and back-end development, combining performance, with my own modern design in UI/UX, and functionality."
                         imageUrl={personalProf}
                         techStack={["react", "node", "express", "mongoDB", "tailwind", "git"]}
                         techIconMap={techIconMap}
@@ -79,8 +79,7 @@ const Projects = () => {
                         githubLink="https://github.com/your-repo/web-application"
                     />
                 </div>
-            </div>
-            <div className="text-center mt-12">
+                <div className="text-center mt-12 col-start-5">
                 <a href="/contact" className="text-lg font-bold text-gray-600 dark:text-gray-400 group">
                     <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                         Connect with me
@@ -90,6 +89,8 @@ const Projects = () => {
                     </span>
                 </a>
             </div>
+            </div>
+            
         </div>
     );
 };
