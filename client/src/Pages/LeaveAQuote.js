@@ -57,9 +57,11 @@ const LeaveAQuote = () => {
             <h1 className="text-xl font-bold mb-4 text-center dark:text-gray-300">
                 Feeling positive? <br />
                 <span className="text-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                    &nbsp; Leave a Quote!
+                    &nbsp; Leave a Quote! <br />
                 </span>
+                
             </h1>
+            
             <div className="grid grid-col-6 mt-8">
                 <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4 mb-6 w-full md:w-3/4 mx-auto">
                     <div className="flex flex-col md:flex-row md:space-x-4 w-full items-center lg:pl-64 mb-4">
@@ -83,7 +85,7 @@ const LeaveAQuote = () => {
                             required
                         ></input>
                     </div>
-                    <button type="submit" className="lg:w-2/12 h:auto px-6 py-3 rounded-full shadow-lg transition transform hover:-translate-y-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white hover:bg-indigo-700 dark:hover:bg-pink-500 ">
+                    <button type="submit" className="font-bold lg:w-2/12 h:auto px-6 py-3 rounded-full shadow-lg transition transform hover:-translate-y-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white hover:bg-indigo-700 dark:hover:bg-pink-500 ">
                         Leave quote 🥨
                     </button>
                 </form>

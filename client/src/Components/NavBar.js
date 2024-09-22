@@ -1,6 +1,9 @@
 import React, { useState, useContext } from 'react';
 import { FaGithub, FaLinkedin, FaMoon, FaSun } from 'react-icons/fa';
 import ThemeContext from '../ThemeContext';
+import whiteLogo from '../Logos/whiteLogo.png';
+import blackLogo from '../Logos/blackLogo.png';
+
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -21,9 +24,9 @@ const NavBar = () => {
       <div className="container mx-auto px-4 py-3 flex justify-between items-center h-16">
         
         {/* Left Section: Logo */}
-        <div className="flex items-center">
-          {/* <img src={logo} alt="Logo" className="w-8 h-8 mr-2" /> */}
-          <span className="text-xl font-bold text-gray-900 dark:text-gray-100 ml-12">PPham</span>
+        <div className="flex items-center">          
+          <img src={blackLogo} alt="Logo" className="h-8 block dark:hidden ml-12" />
+          <img src={whiteLogo} alt="Logo" className="h-8 hidden dark:block ml-12" />
         </div>
 
         {/* Middle Section: Nav Links for Larger Screens */}

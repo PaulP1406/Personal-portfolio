@@ -55,7 +55,7 @@ const Contact = () => {
       }, [success]);
 
     return (
-        <div className="min-h-screen flex items-center justify-center pt-16 bg-white dark:bg-gray-900 mb-8">
+        <div className="min-h-screen flex items-center justify-center pt-28 bg-white dark:bg-gray-900 pb-8">
             {success  && (
                 <Confetti
                  width={width}
