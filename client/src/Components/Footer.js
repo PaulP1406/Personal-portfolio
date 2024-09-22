@@ -26,13 +26,13 @@ const Footer = () => {
             <h3 className="font-semibold mb-4 text-gray-900 dark:text-white">Useful</h3>
             <ul className="space-y-2">
               <li>
-                <a href="/contact" className="transition hover:text-gray-600 dark:hover:text-gray-200">Contact</a>
+                <a href="/contact" className="transition hover:text-rose-600 dark:hover:text-gray-200">Contact</a>
               </li>
               <li>
-                <a href="/about" className="transition hover:text-gray-600 dark:hover:text-gray-200">About</a>
+                <a href="/about" className="transition hover:text-rose-600 dark:hover:text-gray-200">About</a>
               </li>
               <li>
-                <a href="/privacy-policy" className="transition hover:text-gray-600 dark:hover:text-gray-200">Privacy Policy</a>
+                <a href="/quotes" className="transition hover:text-rose-600 dark:hover:text-gray-200">Leave a Quote</a>
               </li>
             </ul>
           </div>
