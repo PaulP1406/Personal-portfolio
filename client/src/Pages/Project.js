@@ -19,6 +19,7 @@ const Projects = () => {
                         &nbsp;PROJECTS
                     </span>
                 </h1>
+                <p className="mb-8 text-gray-600 dark:text-gray-300 text-center lg:text-center pt-4">Click and check out Github / Live demo of the projects 🔥!</p>
             </div>
             <div className="container mx-auto p-6 grid grid-cols-1 lg:grid-cols-6 gap-6">
                 <div className="lg:col-start-2 col-span-2">
@@ -29,6 +30,7 @@ const Projects = () => {
                         techStack={["react", "node", "express"]}
                         techIconMap={techIconMap}
                         githubLink="https://github.com/your-repo/web-application"
+                        liveDemoLink="https://youtube.com"
                     />
                 </div>
                 <div className="lg:col-start-4 col-span-2">
