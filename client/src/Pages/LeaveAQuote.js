@@ -72,7 +72,7 @@ const LeaveAQuote = () => {
                             value={formData.name}
                             maxLength={25}
                             onChange={handleChange}
-                            className="w-3/4 lg:w-3/12 p-2 border rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
+                            className="w-3/4 lg:w-3/12 p-2 border bg-gray-100 rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
                             required
                         />
                         <input
@@ -81,7 +81,7 @@ const LeaveAQuote = () => {
                             maxLength={120}
                             value={formData.quote}
                             onChange={handleChange}
-                            className="w-3/4 lg:w-5/12 p-2 border rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
+                            className="w-3/4 lg:w-5/12 p-2 bg-gray-100 border rounded-lg dark:bg-gray-800 dark:text-white h-12 shadow-lg"
                             required
                         ></input>
                     </div>
