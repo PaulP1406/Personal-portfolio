@@ -45,8 +45,8 @@ const Projects = () => {
                         imageUrl={personalProf}
                         techStack={["react", "node", "express", "mongoDB", "tailwind", "git"]}
                         techIconMap={techIconMap}
-                        githubLink="https://github.com/your-repo/web-application"
-                        liveDemoLink="https://youtube.com"
+                        githubLink="https://github.com/PaulP1406/Personal-portfolio"
+                        liveDemoLink="https://github.com/PaulP1406/Personal-portfolio"
                     />
                 </div>
                 <div className="lg:col-start-4 col-span-2">
@@ -56,7 +56,7 @@ const Projects = () => {
                         imageUrl={Dungeon}
                         techStack={["java", "junit", "git", "scrum"]}
                         techIconMap={techIconMap}
-                        githubLink="https://github.com/your-repo/web-application"
+                        githubLink="https://github.com/PaulP1406/Dungeon-Escape-2D"
                     />
                 </div>
                 <div className="lg:col-start-2 col-span-2">
@@ -66,7 +66,7 @@ const Projects = () => {
                         imageUrl={Routine}
                         techStack={["react", "node", "css", "git"]}
                         techIconMap={techIconMap}
-                        githubLink="https://github.com/your-repo/web-application"
+                        githubLink="https://github.com/PaulP1406/Systemhacks-Routine-Roulette"
                     />
                 </div>
                 <div className="lg:col-start-4 col-span-2">
@@ -76,7 +76,7 @@ const Projects = () => {
                         imageUrl={Carbon}
                         techStack={["react", "python", "git", ]}
                         techIconMap={techIconMap}
-                        githubLink="https://github.com/your-repo/web-application"
+                        githubLink="https://github.com/isa-leroux448/myfoodprint"
                     />
                 </div>
                 <div className="text-center mt-12 lg:col-start-5">
