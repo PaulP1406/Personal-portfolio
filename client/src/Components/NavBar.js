@@ -21,12 +21,14 @@ const NavBar = () => {
 
   return (
     <nav className="bg-white dark:bg-gray-800 shadow-md fixed w-full z-20">
-      <div className="container mx-auto px-4 py-3 flex justify-between items-center h-16">
+      <div className="container mx-auto px-4 py-3 flex justify-between items-center h-16 lg:h-20">
         
         {/* Left Section: Logo */}
         <div className="flex items-center">          
-          <img src={blackLogo} alt="Logo" className="h-8 block dark:hidden ml-12" />
-          <img src={whiteLogo} alt="Logo" className="h-8 hidden dark:block ml-12" />
+          <a href="/" className="ml-20">
+            <img src={blackLogo} alt="Logo" className="h-8 lg:h-12 block dark:hidden" />
+            <img src={whiteLogo} alt="Logo" className="h-8 lg:h-12 hidden dark:block" />
+          </a>
         </div>
 
         {/* Middle Section: Nav Links for Larger Screens */}
