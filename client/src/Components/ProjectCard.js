@@ -40,7 +40,7 @@ const ProjectCard = ({ title, description, imageUrl, techStack, techIconMap, git
                 <h3 className="text-xl font-bold mb-2">{title}</h3>
 
                 {/* Description */}
-                <p className="mb-6 dark:font-light">{description}</p>
+                <p className="mb-6 dark:font-light text-justified">{description}</p>
 
                 {/* Tech Stack Icons */}
                 <div className="flex mt-4 space-x-4">
