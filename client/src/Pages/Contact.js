@@ -153,9 +153,9 @@ const Contact = () => {
                         
                     </h3>
                     <div className="flex justify-center lg:justify-start space-x-4 mt-4">
-                        <a href="https://www.linkedin.com/in/ddpham/" className="transition hover:text-indigo-400 dark:hover:text-pink-300">LinkedIn</a>
-                        <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Github</a>
-                        <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300">Discord</a>
+                        <a href="https://www.linkedin.com/in/ddpham/" className="transition hover:text-indigo-400 dark:hover:text-pink-300" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                        <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300" target="_blank" rel="noopener noreferrer">Github</a>
+                        <a href="https://github.com/PaulP1406" className="transition hover:text-indigo-400 dark:hover:text-pink-300" target="_blank" rel="noopener noreferrer">Discord</a>
                     </div>
                 </div>
             </div>
