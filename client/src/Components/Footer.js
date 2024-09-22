@@ -1,7 +1,9 @@
-import React from 'react';
+import React , { useEffect, useState, useContext} from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import whiteLogo from '../Logos/whiteLogo.png';
+import blackLogo from '../Logos/blackLogo.png';
 
-const Footer = () => {
+const Footer = () => { 
   return (
     <footer className="py-12 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-400">
       {/* Top Line */}
@@ -12,8 +14,9 @@ const Footer = () => {
       <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-4 gap-8">
         
         {/* Left Column: Logo */}
-        <div>
-          <h2 className="text-2xl font-bold mb-4 text-center lg:text-left lg:pl-20 text-gray-900 dark:text-white">PPham</h2>
+        <div className="flex justify-center lg:justify-start lg:pl-20">
+          <img src={blackLogo} alt="Logo" className="h-28 block dark:hidden" />
+          <img src={whiteLogo} alt="Logo" className="h-28 hidden dark:block" />
         </div>
 
         {/* Right Column: Useful Links and Social Icons */}
@@ -50,7 +53,7 @@ const Footer = () => {
       </div>
 
       {/* Bottom Row: Copyright */}
-      <div className="container mx-auto px-6 flex justify-center lg:justify-between items-center mt-8 lg:pl-24">
+      <div className="container mx-auto px-6 flex justify-center lg:justify-between items-center mt-8 lg:pl-28">
         <p className="text-gray-800 dark:text-gray-400">&copy; {new Date().getFullYear()} Paul Pham. All rights reserved.</p>
       </div>
     </footer>
