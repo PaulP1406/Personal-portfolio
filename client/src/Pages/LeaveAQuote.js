@@ -102,7 +102,10 @@ const LeaveAQuote = () => {
                     <span className="text-5xl bg-gradient-to-r from-amber-500 to-pink-500 font-bold to-pink-500 bg-clip-text text-transparent">
                         Quotes
                     </span>
-                    &nbsp; left by visitors 🤌
+                    <span className='lg:hidden'>
+                        <br />
+                    </span>
+                    &nbsp; left by the visitors 🤌
                 </h2>
                 <ul className=" mt-12 grid grid-cols-1 w-3/4 md:w-auto md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto lg:mx-36">
                     {quotes.map((quote, index) => (
