@@ -15,3 +15,5 @@ npm-debug.log*
 # Operating system or editor specific files
 .DS_Store
 Thumbs.db
+
+.vercel
