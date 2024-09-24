@@ -132,7 +132,7 @@ const About = () => {
           
         </div>
         <div className='pb-8 pt-12 text-center lg:text-right lg:mr-16'>
-                <a href="/contact" className="text-lg font-bold text-gray-600 dark:text-gray-400 group">
+                <a href="/projects" className="text-lg font-bold text-gray-600 dark:text-gray-400 group">
                         <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                             Check out my projects
                         </span>
