@@ -57,7 +57,7 @@ app.post('/api/email', (req, res) => {
     from: email,
     to: "ducduy0308@gmail.com",
     subject: `Message from ${firstName} ${lastName}`,
-    text: `${message}  Phone number: ${phone}`
+    text: `${message}  Phone number: ${phone} Email: ${email}`
   };
 
   try {
