@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react';
+import {Filter} from 'bad-words';
+
 
 const LeaveAQuote = () => {
     const [formData, setFormData] = useState({ name: '', quote: '' });
@@ -6,7 +8,9 @@ const LeaveAQuote = () => {
     const [error, setError] = useState('');
     const [success, setSuccess] = useState(false);
 
-    // Fetch all quotes from backend
+    const filter = new Filter();
+
+      // Fetch all quotes from backend
     useEffect(() => {
         fetchQuotes();
     }, []);
@@ -28,6 +32,11 @@ const LeaveAQuote = () => {
 
     // Handle Form Submission
     const handleSubmit = async (e) => {
+        if (filter.isProfane(formData.quote)) {
+            setError('Your quote contains inappropriate words. Please try again.');
+            alert('Your quote contains inappropriate words. Please try again.');
+            return;
+        }
         e.preventDefault();
         setError('');
         setSuccess(false);
