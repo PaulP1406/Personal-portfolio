@@ -100,7 +100,7 @@ const LeaveAQuote = () => {
                 </form>
             </div>
 
-            {error && <p className="text-red-500 mb-4 dark:text-red-400">{error}</p>}
+            {error && <p className="text-red-500 mb-4 dark:text-rose-700 text-center">{error}</p>}
             <div className="container mx-auto px-6 w-90">
                 <hr className="my-20 border-gray-300 dark:border-gray-700 mx-auto pb-6 w-5/12" />
             </div>
