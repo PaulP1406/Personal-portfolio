@@ -94,7 +94,7 @@ const LeaveAQuote = () => {
                             required
                         ></input>
                     </div>
-                    <button type="submit" className="font-bold lg:w-2/12 h:auto px-6 py-3 rounded-full shadow-lg transition transform hover:-translate-y-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white hover:bg-indigo-700 dark:hover:bg-pink-500 ">
+                    <button type="submit" className="whitespace-nowrap font-bold lg:w-2/12 h:auto px-6 py-3 rounded-full shadow-lg transition transform hover:-translate-y-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 text-white hover:bg-indigo-700 dark:hover:bg-pink-500 ">
                         Leave quote 🥨
                     </button>
                 </form>
