@@ -80,7 +80,7 @@ const Projects = () => {
                     />
                 </div>
                 <div className="text-center mt-12 lg:col-start-5">
-                <a href="/contact" className="text-lg font-bold text-gray-600 dark:text-gray-400 group">
+                <a href="/contact" className="inline-flex text-lg font-bold text-gray-600 dark:text-gray-400 group whitespace-nowrap">
                     <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                         Connect with me
                     </span>
