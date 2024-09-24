@@ -57,7 +57,14 @@ app.post('/api/email', (req, res) => {
     from: email,
     to: "ducduy0308@gmail.com",
     subject: `Message from ${firstName} ${lastName}`,
-    text: `${message}  Phone number: ${phone}`
+    text: `Message: ${message}\nPhone: ${phone}\nEmail: ${email}`,
+    html: `
+      <h1>New Contact Request</h1>
+      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Phone:</strong> ${phone}</p>
+      <p><strong>Message:</strong> ${message}</p>
+    `
   };
 
   try {
