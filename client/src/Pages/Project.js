@@ -46,7 +46,7 @@ const Projects = () => {
                         techStack={["react", "node", "express", "mongoDB", "tailwind", "git"]}
                         techIconMap={techIconMap}
                         githubLink="https://github.com/PaulP1406/Personal-portfolio"
-                        liveDemoLink="https://github.com/PaulP1406/Personal-portfolio"
+                        liveDemoLink="https://www.paul-pham.com/"
                     />
                 </div>
                 <div className="lg:col-start-4 col-span-2">
@@ -57,6 +57,7 @@ const Projects = () => {
                         techStack={["java", "junit", "git", "scrum"]}
                         techIconMap={techIconMap}
                         githubLink="https://github.com/PaulP1406/Dungeon-Escape-2D"
+                        liveDemoLink="https://drive.google.com/file/d/1EfufzyUS2UszcwRoO-UMBws5xpqiL191/view?usp=sharing"
                     />
                 </div>
                 <div className="lg:col-start-2 col-span-2">
