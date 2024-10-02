@@ -1,6 +1,6 @@
 import React from 'react';
 import {ReactTyped} from 'react-typed';
-import profPic from '../Logos/profpic.png';
+import profPic from '../Logos/profpic123.png';
 
 const Home = () => {
   return (
@@ -52,7 +52,7 @@ const Home = () => {
           </div>
 
           {/* Right Section: Image */}
-          <div className="lg:w-1/2 mb-10 lg:mb-0 mx-auto lg:ml-48 pb-8">
+          <div className="lg:w-5/12 mb-10 lg:mb-0 mx-auto lg:ml-40 pb-32">
             <img src={profPic} alt="Paul Pham" className="w-3/5 lg:w-full h-auto rounded-lg border-0 mx-auto" />
           </div>
         </div>
