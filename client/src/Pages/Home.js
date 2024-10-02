@@ -52,7 +52,7 @@ const Home = () => {
           </div>
 
           {/* Right Section: Image */}
-          <div className="lg:w-5/12 mb-10 lg:mb-0 mx-auto lg:ml-40 pb-32">
+          <div className="lg:w-5/12 mb-10 lg:mb-0 mx-auto lg:ml-40 pb-8 lg:pb-32">
             <img src={profPic} alt="Paul Pham" className="w-3/5 lg:w-full h-auto rounded-lg border-0 mx-auto" />
           </div>
         </div>
