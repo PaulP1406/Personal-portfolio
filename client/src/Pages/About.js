@@ -36,7 +36,7 @@ const About = () => {
           {/* Buttons */}
           <div className="flex space-x-4 mt-6 justify-center lg:justify-start">
             <a 
-                href="https://drive.google.com/file/d/1EpXHTSY39yhyJQvGkQfDEwYBbNO9Nau4/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1cf_SVQ_KnmGzNBvPo88Rm74BtIyeFwmu/view?usp=sharing" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="bg-gradient-to-r from-rose-500 to-amber-600 dark:from-rose-500 dark:to-amber-600 text-white px-6 py-3 rounded-full shadow transition duration-300 ease-in-out hover:bg-gradient-to-r hover:from-fuchsia-600 hover:to-pink-600 dark:hover:bg-gradient-to-r dark:hover:from-fuchsia-600 dark:hover:to-pink-600 hover:scale-105"
