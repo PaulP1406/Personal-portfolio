@@ -63,7 +63,7 @@ const NavBar = () => {
           <a href="https://www.linkedin.com/in/ddpham/" target="_blank" rel="noopener noreferrer" className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">
             <FaLinkedin className="w-5 h-5" />
           </a>
-          <button onClick={toggleDarkMode} className="text-gray-800 dark:text-gray-200 hover:text-yellow-500 dark:hover:text-yellow-400 focus:outline-none">
+          <button onClick={toggleTheme} className="text-gray-800 dark:text-gray-200 hover:text-yellow-500 dark:hover:text-yellow-400 focus:outline-none">
             {isDarkMode ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
           </button>
           <button onClick={toggleMenu} className="text-gray-800 dark:text-gray-200 focus:outline-none">
