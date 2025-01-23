@@ -13,8 +13,7 @@ This is a full-stack personal portfolio website built to showcase my projects, s
   - [Running the Application](#running-the-application)
 - [Environment Variables](#environment-variables)
 - [Deployment](#deployment)
-- [Contact](#contact)
-- [License](#license)
+
 
 ## Live Demo
 
