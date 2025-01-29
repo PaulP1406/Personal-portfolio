@@ -49,7 +49,7 @@ const Projects = () => {
                         liveDemoLink="https://www.paul-pham.com/"
                     />
                 </div>
-                <div className="lg:col-start-2 col-span-2">
+                <div className="lg:col-start-4 col-span-2">
                     <ProjectCard
                         title="Personal portfolio 📃"
                         description="This Personal Portfolio is a full-stack application showcasing my skills and projects. Built with React, Tailwind CSS, Node.js, Express, and MongoDB, it features a dynamic, responsive design and smooth user interactions. The app integrates a backend for project management and stores data efficiently with MongoDB. It's a comprehensive display of my expertise in both front-end and back-end development, combining performance, with my own modern design in UI/UX, and functionality."
@@ -60,7 +60,7 @@ const Projects = () => {
                         liveDemoLink="https://www.paul-pham.com/"
                     />
                 </div>
-                <div className="lg:col-start-4 col-span-2">
+                <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
                         title="Dungeon Escape 8-bit  🎮"
                         description="Dungeon Escape is a Java-based game project developed using Java's Graphics libraries. As part of a 4-student team, demonstrated my full-stack app development skills, working on both the game’s development (design, graphics and algorithm implementation) and implementing automated tests with JUnit and Mockito. Followed agile methodologies along with version control, following the main principles of the software development life cycle (SDLC) to ensure smooth and efficient game execution."
@@ -71,7 +71,7 @@ const Projects = () => {
                         liveDemoLink="https://drive.google.com/file/d/1EfufzyUS2UszcwRoO-UMBws5xpqiL191/view?usp=sharing"
                     />
                 </div>
-                <div className="lg:col-start-2 col-span-2">
+                <div className="lg:col-start-4 col-span-2">
                     <ProjectCard
                         title="Routine Roulette 🎲"
                         description="Routine Roulette app is a dynamic scheduling tool developed as part of ChaosHack 2024. Built using React and various frameworks, it allows users to drag and drop tasks to organize their daily schedules. A standout feature is the chaos button, which permutates the user's set schedule, creating a randomized arrangement of tasks—hence the app's name. As the project lead, I worked with a team of 4 developers, designing the UI and completing the back-end development to ensure a seamless and engaging user experience."
@@ -81,7 +81,7 @@ const Projects = () => {
                         githubLink="https://github.com/PaulP1406/Systemhacks-Routine-Roulette"
                     />
                 </div>
-                <div className="lg:col-start-4 col-span-2">
+                <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
                         title="MyFootPrint 🌍"
                         description="MyFootPrint app, developed in collaboration with a team of 4 during Stormhacks 2023, helps users generate food recipes with the lowest carbon emissions. The front end was built using ReactJS, while the ChatGPT API was integrated to provide recipe suggestions. The back end was powered by Python, with BeautifulSoup used for data scraping. This project showcases a blend of web development and environmental awareness, aimed at promoting sustainable eating habits."
