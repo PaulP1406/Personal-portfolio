@@ -38,6 +38,17 @@ const Projects = () => {
                 <p className="mb-8 text-gray-600 dark:text-gray-300 text-center lg:text-center pt-4">Check out Github / Live demo of the projects🔥! <br /> (try misclick to check out the shaky effect)</p>
             </div>
             <div className="container mx-auto p-6 grid grid-cols-1 lg:grid-cols-6 gap-6">
+            <div className="lg:col-start-2 col-span-2">
+                    <ProjectCard
+                        title="Personal portfolio 📃"
+                        description="This Personal Portfolio is a full-stack application showcasing my skills and projects. Built with React, Tailwind CSS, Node.js, Express, and MongoDB, it features a dynamic, responsive design and smooth user interactions. The app integrates a backend for project management and stores data efficiently with MongoDB. It's a comprehensive display of my expertise in both front-end and back-end development, combining performance, with my own modern design in UI/UX, and functionality."
+                        imageUrl={personalProf}
+                        techStack={["react", "node", "express", "mongoDB", "tailwind", "git"]}
+                        techIconMap={techIconMap}
+                        githubLink="https://github.com/PaulP1406/Personal-portfolio"
+                        liveDemoLink="https://www.paul-pham.com/"
+                    />
+                </div>
                 <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
                         title="Personal portfolio 📃"
