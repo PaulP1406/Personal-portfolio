@@ -38,7 +38,7 @@ const Projects = () => {
                 <p className="mb-8 text-gray-600 dark:text-gray-300 text-center lg:text-center pt-4">Check out Github / Live demo of the projects🔥! <br /> (try misclick to check out the shaky effect)</p>
             </div>
             <div className="container mx-auto p-6 grid grid-cols-1 lg:grid-cols-6 gap-6">
-            <div className="lg:col-start-2 col-span-2">
+                <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
                         title="Personal portfolio 📃"
                         description="This Personal Portfolio is a full-stack application showcasing my skills and projects. Built with React, Tailwind CSS, Node.js, Express, and MongoDB, it features a dynamic, responsive design and smooth user interactions. The app integrates a backend for project management and stores data efficiently with MongoDB. It's a comprehensive display of my expertise in both front-end and back-end development, combining performance, with my own modern design in UI/UX, and functionality."
@@ -92,15 +92,15 @@ const Projects = () => {
                     />
                 </div>
                 <div className="text-center mt-12 lg:col-start-5">
-                <a href="/contact" className="inline-flex text-lg font-bold text-gray-600 dark:text-gray-400 group whitespace-nowrap">
-                    <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                        Connect with me
-                    </span>
-                    <span className="inline-block ml-2 transition-transform duration-300 transform group-hover:translate-x-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
-                        →
-                    </span>
-                </a>
-            </div>
+                    <a href="/contact" className="inline-flex text-lg font-bold text-gray-600 dark:text-gray-400 group whitespace-nowrap">
+                        <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                            Connect with me
+                        </span>
+                        <span className="inline-block ml-2 transition-transform duration-300 transform group-hover:translate-x-2 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
+                            →
+                        </span>
+                    </a>
+                </div>
             </div>
             
         </div>
