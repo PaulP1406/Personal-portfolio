@@ -1,6 +1,6 @@
 import React from 'react';
 import {ReactTyped} from 'react-typed';
-import profPic from '../Logos/profpic123.png';
+import profPic from '../Logos/profpic123.webp'; 
 
 const Home = () => {
   return (
