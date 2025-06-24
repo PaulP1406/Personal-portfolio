@@ -96,7 +96,17 @@ const Projects = () => {
                         githubLink="https://github.com/isa-leroux448/myfoodprint"
                     />
                 </div>
-                <div className="text-center lg:mt-12 lg:col-start-5">
+                <div className="lg:col-start-4 col-span-2">
+                    {/* <ProjectCard
+                        title="MyFootPrint 🌍"
+                        description="MyFootPrint app, developed in collaboration with a team of 4 during Stormhacks 2023, helps users generate food recipes with the lowest carbon emissions. The front end was built using ReactJS, while the ChatGPT API was integrated to provide recipe suggestions. The back end was powered by Python, with BeautifulSoup used for data scraping. This project showcases a blend of web development and environmental awareness, aimed at promoting sustainable eating habits."
+                        imageUrl={Carbon}
+                        techStack={["react", "python", "git", ]}
+                        techIconMap={techIconMap}
+                        githubLink="https://github.com/isa-leroux448/myfoodprint"
+                    /> */}
+                </div>
+                <div className="text-center mt-12 lg:col-start-5 lg:mt-12">
                     <a href="/contact" className="inline-flex text-lg font-bold text-gray-600 dark:text-gray-400 group whitespace-nowrap">
                         <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                             Connect with me
