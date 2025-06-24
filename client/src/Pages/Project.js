@@ -40,8 +40,8 @@ const Projects = () => {
             <div className="container mx-auto p-6 grid grid-cols-1 lg:grid-cols-6 gap-6">
                 <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
-                        title="Personal portfolio 📃"
-                        description="This Personal Portfolio is a full-stack application showcasing my skills and projects. Built with React, Tailwind CSS, Node.js, Express, and MongoDB, it features a dynamic, responsive design and smooth user interactions. The app integrates a backend for project management and stores data efficiently with MongoDB. It's a comprehensive display of my expertise in both front-end and back-end development, combining performance, with my own modern design in UI/UX, and functionality."
+                        title="Unify Social App 📱"
+                        description="Unify Social is a full-stack social media platform I developed with a team at Enactus SFU to support newcomers to Canada by connecting them with job opportunities, community resources, and peer support. Built using React Native, Node.js, PostgreSQL, and AWS DynamoDB, the app was designed for scalability and real-time interaction. I led the development of core features, implemented a CI/CD pipeline with GitHub Actions, and collaborated with designers to bring accessible, user-friendly interfaces to life."
                         imageUrl={personalProf}
                         techStack={["react", "node", "express", "mongoDB", "tailwind", "git"]}
                         techIconMap={techIconMap}
