@@ -68,6 +68,9 @@ const LeaveAQuote = () => {
                 <span className="text-5xl bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                     &nbsp; Leave a Quote! <br />
                 </span>
+                <span className="block text-sm text-gray-500 dark:text-gray-400 mt-2">
+                    &nbsp; There may be a short delay before your quote appears (due to backend lags).
+                </span>
                 
             </h1>
             
@@ -117,6 +120,55 @@ const LeaveAQuote = () => {
                     &nbsp; left by the visitors 🤌
                 </h2>
                 <ul className=" mt-12 grid grid-cols-1 w-3/4 md:w-auto md:grid-cols-2 lg:grid-cols-3 gap-4 mx-auto lg:mx-36">
+                    {/* Default quotes to buffer backend lags */}
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"Just enjoy a 🥐 and life will be good!"</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- Paul Pham</p>
+                        </div>
+                    </li>
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"Success is not final, failure is not fatal: it is the courage to continue that counts."</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- Winston Churchill</p>
+                        </div>
+                    </li>
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"Even if you are on the right track, you'll get run over if you just sit there."</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- Will Rogers</p>
+                        </div>
+                    </li>
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"There is always one more bug to fix 🐞"</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- Ellen Ullman</p>
+                        </div>
+                    </li>
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"Clean code always looks like it was written by someone who cares 🛁"</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- Robert C. Martin</p>
+                        </div>
+                    </li>
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"Greatness from small beginnings"</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- Amr SFU CS</p>
+                        </div>
+                    </li>
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"This looks great Paul!"</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- A random person</p>
+                        </div>
+                    </li>
+                    <li className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
+                        <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
+                            <p className="text-gray-800 font-semibold dark:text-gray-200 text-center px-4 text-center">"Keep applying"</p>
+                            <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- Simon</p>
+                        </div>
+                    </li>
                     {quotes.map((quote, index) => (
                         <li key={index} className="p-1 rounded-full shadow-lg bg-gradient-to-r from-amber-500 to-pink-500 dark:from-amber-600 dark:to-pink-600 transform transition-transform duration-300 hover:scale-105">
                             <div className="bg-white p-4 rounded-full border border-gray-200 dark:bg-gray-800 dark:border-gray-600 h-44 overflow-hidden flex flex-col justify-center">
@@ -124,7 +176,7 @@ const LeaveAQuote = () => {
                                 <p className="text-gray-600 text-sm dark:text-gray-400 text-center">- {quote.name}</p>
                             </div>
                         </li>
-                    ))}
+                    ))}                   
                 </ul>
             </div>
             <div className='pb-16 text-center lg:text-right lg:mr-40'>
