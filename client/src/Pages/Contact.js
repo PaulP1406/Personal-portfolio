@@ -25,7 +25,7 @@ const Contact = () => {
         setError("");
         setSucess("");
         try {
-            const response = await fetch ("https://paul-pham-backend-4b959455f87f.herokuapp.com/api/email", {
+            const response = await fetch ("https://personal-portfolio-izr2.onrender.com/api/email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"

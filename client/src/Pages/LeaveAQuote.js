@@ -17,7 +17,7 @@ const LeaveAQuote = () => {
 
     const fetchQuotes = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/quotes');
+            const response = await fetch('https://personal-portfolio-izr2.onrender.com/api/quotes');
             const data = await response.json();
             setQuotes(data);
         } catch (err) {
@@ -42,7 +42,7 @@ const LeaveAQuote = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch('http://localhost:5000/api/quotes', {
+            const response = await fetch('https://personal-portfolio-izr2.onrender.com/api/quotes', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
