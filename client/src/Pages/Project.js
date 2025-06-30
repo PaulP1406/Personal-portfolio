@@ -1,15 +1,17 @@
 import React from 'react';
 import ProjectCard from '../Components/ProjectCard';
 
-import { FaReact, FaNodeJs, FaServer, FaJava, FaPython } from 'react-icons/fa'; 
+import { FaReact, FaNodeJs, FaServer, FaJava, FaPython, FaAws } from 'react-icons/fa'; 
 import { DiGit, DiScrum, DiMongodb, DiCss3 } from "react-icons/di";
 import { RiTailwindCssFill } from "react-icons/ri";
-import { SiJunit5 } from "react-icons/si";
+import { SiJunit5, SiGithubactions } from "react-icons/si";
+import { BiLogoPostgresql } from "react-icons/bi";
 
 import personalProf from '../Logos/PersonalProf.png';
 import Dungeon from '../Logos/Dungeon.png';
 import Routine from '../Logos/Routine.png';
 import Carbon from '../Logos/Carbon.png';
+import Unify from '../Logos/Unify.png';
 
 const techIconMap = {
     react: <FaReact />,
@@ -22,7 +24,10 @@ const techIconMap = {
     css: <DiCss3 />,
     tailwind: <RiTailwindCssFill />,
     junit: <SiJunit5 />,
-    python: <FaPython />
+    python: <FaPython />,
+    aws: <FaAws />,
+    postgre: <BiLogoPostgresql />,
+    githubactions: <SiGithubactions />
 };
 
 const Projects = () => {
@@ -40,13 +45,13 @@ const Projects = () => {
             <div className="container mx-auto p-6 grid grid-cols-1 lg:grid-cols-6 gap-6">
                 <div className="lg:col-start-2 col-span-2">
                     <ProjectCard
-                        title="Personal portfolio 📃"
-                        description="This Personal Portfolio is a full-stack application showcasing my skills and projects. Built with React, Tailwind CSS, Node.js, Express, and MongoDB, it features a dynamic, responsive design and smooth user interactions. The app integrates a backend for project management and stores data efficiently with MongoDB. It's a comprehensive display of my expertise in both front-end and back-end development, combining performance, with my own modern design in UI/UX, and functionality."
-                        imageUrl={personalProf}
-                        techStack={["react", "node", "express", "mongoDB", "tailwind", "git"]}
+                        title="Unify Social App 📱"
+                        description="Unify Social is a full-stack social media platform I developed with a team at Enactus SFU to support newcomers to Canada by connecting them with job opportunities, community resources, and peer support. Built using React Native, Node.js, PostgreSQL, and AWS DynamoDB, the app was designed for scalability and real-time interaction. I led the development of core features, implemented a CI/CD pipeline with GitHub Actions, and collaborated with designers to bring accessible, user-friendly interfaces to life."
+                        imageUrl={Unify}
+                        techStack={["react", "express", "mongoDB", "postgre", "aws", "git", "githubactions"]}
                         techIconMap={techIconMap}
-                        githubLink="https://github.com/PaulP1406/Personal-portfolio"
-                        liveDemoLink="https://www.paul-pham.com/"
+                        githubLink="https://github.com/UnifyCN/Unify"
+                        // liveDemoLink="https://www.paul-pham.com/"
                     />
                 </div>
                 <div className="lg:col-start-4 col-span-2">
@@ -91,7 +96,17 @@ const Projects = () => {
                         githubLink="https://github.com/isa-leroux448/myfoodprint"
                     />
                 </div>
-                <div className="text-center mt-12 lg:col-start-5">
+                <div className="lg:col-start-4 col-span-2">
+                    {/* <ProjectCard
+                        title="MyFootPrint 🌍"
+                        description="MyFootPrint app, developed in collaboration with a team of 4 during Stormhacks 2023, helps users generate food recipes with the lowest carbon emissions. The front end was built using ReactJS, while the ChatGPT API was integrated to provide recipe suggestions. The back end was powered by Python, with BeautifulSoup used for data scraping. This project showcases a blend of web development and environmental awareness, aimed at promoting sustainable eating habits."
+                        imageUrl={Carbon}
+                        techStack={["react", "python", "git", ]}
+                        techIconMap={techIconMap}
+                        githubLink="https://github.com/isa-leroux448/myfoodprint"
+                    /> */}
+                </div>
+                <div className="text-center mt-12 lg:col-start-5 lg:mt-12">
                     <a href="/contact" className="inline-flex text-lg font-bold text-gray-600 dark:text-gray-400 group whitespace-nowrap">
                         <span className="bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 bg-clip-text text-transparent">
                             Connect with me
