@@ -17,7 +17,7 @@ const LeaveAQuote = () => {
 
     const fetchQuotes = async () => {
         try {
-            const response = await fetch('https://paul-pham-backend-4b959455f87f.herokuapp.com/api/quotes');
+            const response = await fetch('http://localhost:5000/api/quotes');
             const data = await response.json();
             setQuotes(data);
         } catch (err) {
@@ -42,7 +42,7 @@ const LeaveAQuote = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch('https://paul-pham-backend-4b959455f87f.herokuapp.com/api/quotes', {
+            const response = await fetch('http://localhost:5000/api/quotes', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),
@@ -73,7 +73,7 @@ const LeaveAQuote = () => {
             
             <div className="grid grid-col-6 mt-8">
                 <form onSubmit={handleSubmit} className="flex flex-col items-center space-y-4 mb-6 w-full md:w-3/4 mx-auto">
-                    <div className="flex flex-col md:flex-row md:space-x-4 w-full items-center lg:pl-64 mb-4">
+                    <div className="flex flex-col md:flex-row md:space-x-4 w-full lg:w-9/12 items-center lg:pl-64 mb-4">
                         <input
                             type="text"
                             name="name"
