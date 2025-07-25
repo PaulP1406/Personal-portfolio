@@ -25,7 +25,7 @@ const Contact = () => {
         setError("");
         setSucess("");
         try {
-            const response = await fetch ("https://personal-portfolio-izr2.onrender.com/api/email", {
+            const response = await fetch ("http://localhost:5000/api/email", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -145,7 +145,6 @@ const Contact = () => {
                     <p className="text-gray-600 dark:text-gray-300 text-center lg:text-left">
                         <strong>Email:</strong> ducduy0308@gmail.com
                     </p>
-                    <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Mobile:</strong> (+1) 778-710-6344</p>
                     <p className="mt-4 text-gray-600 dark:text-gray-300 text-center lg:text-left"><strong>Location:</strong> Vancouver, BC, Canada</p>
 
                     <h3 className="pt-16 lg:mt-12 text-3xl lg:text-2xl font-bold text-gray-700 dark:text-gray-100 text-center lg:text-left mt-8">
