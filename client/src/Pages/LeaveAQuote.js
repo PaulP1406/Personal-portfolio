@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import {Filter} from 'bad-words';
+import API_BASE from '../api';
 
 
 const LeaveAQuote = () => {
@@ -17,7 +18,7 @@ const LeaveAQuote = () => {
 
     const fetchQuotes = async () => {
         try {
-            const response = await fetch('http://localhost:5000/api/quotes');
+            const response = await fetch(`${API_BASE}/api/quotes`);
             const data = await response.json();
             setQuotes(data);
         } catch (err) {
@@ -42,7 +43,7 @@ const LeaveAQuote = () => {
         setSuccess(false);
 
         try {
-            const response = await fetch('http://localhost:5000/api/quotes', {
+            const response = await fetch(`${API_BASE}/api/quotes`, {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify(formData),

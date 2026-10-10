@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti';
+import API_BASE from '../api';
 
 const Contact = () => {
     const { width, height } = useWindowSize();
@@ -25,7 +26,7 @@ const Contact = () => {
         setError("");
         setSucess("");
         try {
-            const response = await fetch ("https://paul-pham-backend-4b959455f87f.herokuapp.com/api/email", {
+            const response = await fetch (`${API_BASE}/api/email`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -126,6 +127,7 @@ const Contact = () => {
                             required
                         ></textarea>
                         
+                        {error && <p className="text-red-500 dark:text-rose-400">{error}</p>}
                         <div className="text-center lg:text-left">
                             <button
                                 type="submit"
