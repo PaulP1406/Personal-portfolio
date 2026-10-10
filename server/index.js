@@ -41,20 +41,24 @@ app.get('/api/email', (req, res) => {
 
 
 // Nodemailer setup:
-app.post('/api/email', (req, res) => {
+app.post('/api/email', async (req, res) => {
   const { firstName, lastName, email, phone, message } = req.body;
-  
+
+  if (!firstName || !lastName || !email || !message) {
+    return res.status(400).json({ message: 'Missing required fields' });
+  }
+
   const transporter = Nodemailer.createTransport({
     service: 'gmail',
     auth: {
       user: process.env.EMAIL,
-      pass: process.env.PASSWORD
-    },
-    logger: true
+      pass: (process.env.PASSWORD || '').replace(/\s/g, '')
+    }
   });
 
   const mailOptions = {
-    from: email,
+    from: process.env.EMAIL,
+    replyTo: email,
     to: "ducduy0308@gmail.com",
     subject: `Message from ${firstName} ${lastName}`,
     text: `Message: ${message}\nPhone: ${phone}\nEmail: ${email}`,
@@ -68,9 +72,10 @@ app.post('/api/email', (req, res) => {
   };
 
   try {
-    transporter.sendMail(mailOptions);
+    await transporter.sendMail(mailOptions);
     res.status(200).json({ message: 'Email sent' });
   } catch (error) {
+    console.error('Email send failed:', error.message);
     res.status(500).json({ message: 'Error sending email' });
   }
 });
