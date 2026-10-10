@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import useWindowSize from 'react-use/lib/useWindowSize'
 import Confetti from 'react-confetti';
-import API_BASE from '../api';
 
 const Contact = () => {
     const { width, height } = useWindowSize();
@@ -24,21 +23,30 @@ const Contact = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         setError("");
-        setSucess("");
+        setSucess(false);
         try {
-            const response = await fetch (`${API_BASE}/api/email`, {
+            const response = await fetch("https://formsubmit.co/ajax/5e8556b13345cda4f694151d1c16e438", {
                 method: "POST",
                 headers: {
-                    "Content-Type": "application/json"
+                    "Content-Type": "application/json",
+                    "Accept": "application/json"
                 },
-                body: JSON.stringify(formData)
+                body: JSON.stringify({
+                    name: `${formData.firstName} ${formData.lastName}`,
+                    email: formData.email,
+                    phone: formData.phone,
+                    message: formData.message,
+                    _subject: `Message from ${formData.firstName} ${formData.lastName}`,
+                    _template: "table",
+                    _captcha: "false"
+                })
             });
-            if (response.ok) {
+            const data = await response.json();
+            if (response.ok && String(data.success) === "true") {
                 setSucess(true);
-                console.log("Message sent successfully!");
                 setFormData({"firstName": "", "lastName": "", "email": "", "phone": "", "message": ""});
             } else {
-                setError("Failed to send message. Please try again later.");
+                setError(data.message || "Failed to send message. Please try again later.");
             }
         }
         catch (err) {
