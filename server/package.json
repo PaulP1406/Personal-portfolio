@@ -10,6 +10,9 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": "24.x"
+  },
   "description": "",
   "dependencies": {
     "cors": "^2.8.5",
