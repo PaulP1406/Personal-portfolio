@@ -1,4 +1,4 @@
-import React , { useEffect, useState, useContext} from 'react';
+import React from 'react';
 import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import whiteLogo from '../Logos/whiteLogo.png';
 import blackLogo from '../Logos/blackLogo.png';

@@ -7,7 +7,6 @@ const LeaveAQuote = () => {
     const [formData, setFormData] = useState({ name: '', quote: '' });
     const [quotes, setQuotes] = useState([]);
     const [error, setError] = useState('');
-    const [success, setSuccess] = useState(false);
 
     const filter = new Filter();
 
@@ -40,7 +39,6 @@ const LeaveAQuote = () => {
         }
         e.preventDefault();
         setError('');
-        setSuccess(false);
 
         try {
             const response = await fetch(`${API_BASE}/api/quotes`, {
@@ -53,7 +51,6 @@ const LeaveAQuote = () => {
                 const newQuote = await response.json();
                 setQuotes([...quotes, newQuote]); // Add new quote to the list
                 setFormData({ name: '', quote: '' }); // Reset the form
-                setSuccess(true);
             } else {
                 setError('Failed to submit the quote. Please try again.');
             }

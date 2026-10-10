@@ -7,16 +7,10 @@ import blackLogo from '../Logos/blackLogo.png';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isDarkMode, setIsDarkMode] = useState(false);
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
-  };
-
-  const toggleDarkMode = () => {
-    setIsDarkMode(!isDarkMode);
-    document.documentElement.classList.toggle('dark');
   };
 
   return (
@@ -64,7 +58,7 @@ const NavBar = () => {
             <FaLinkedin className="w-5 h-5" />
           </a>
           <button onClick={toggleTheme} className="text-gray-800 dark:text-gray-200 hover:text-yellow-500 dark:hover:text-yellow-400 focus:outline-none">
-            {isDarkMode ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
+            {theme === 'dark' ? <FaSun className="w-5 h-5" /> : <FaMoon className="w-5 h-5" />}
           </button>
           <button onClick={toggleMenu} className="text-gray-800 dark:text-gray-200 focus:outline-none">
             {isOpen ? (
